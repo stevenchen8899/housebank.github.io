@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>響應式網頁</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大桃園工商不動產</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  .container {
+    width: 100%;
+  }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
+  .container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
+  .buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ced4da;
+  }
 
-        .form-container {
-            margin: 20px 0;
-        }
+  .buttons a {
+    text-decoration: none;
+    flex-grow: 1;
+    margin: 0 10px;
+  }
 
-        .button-container {
-            margin: 20px 0;
-        }
+  .button {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+  }
 
-        .call-button {
-            display: inline-block;
-            padding: 15px 25px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #e74c3c;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+  .line-button {
+    background-color: #00b900; /* LINE官方標準顏色 */
+  }
 
-        .call-button:hover {
-            background-color: #c0392b;
-        }
-    </style>
+  .call-button {
+    background-color: red;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- 圖片 -->
-        <div class="image-container">
-            <img src="https://www.google.com/imgres?q=00940&imgurl=https%3A%2F%2Fstartingedu.sgp1.digitaloceanspaces.com%2Fsedu%2Fwp-content%2Fuploads%2F00940_00.webp&imgrefurl=https%3A%2F%2Fstartingedu.com%2F00940-etf%2F&docid=z3S3dgukoGnSzM&tbnid=0ZqCT9HQD-6M6M&vet=12ahUKEwi9oaDy3aaGAxWaoK8BHcq9DP0QM3oECBEQAA..i&w=1281&h=721&hcb=2&ved=2ahUKEwi9oaDy3aaGAxWaoK8BHcq9DP0QM3oECBEQAA" alt="示例圖片">
-        </div>
-        
-        <!-- 嵌入Google表單 -->
-        <div class="form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG_jFkUv24qNucYz4o2JhloA1W5aXY-IEAiu7TtZ7vGzYesw/viewform?embedded=true" width="640" height="2120" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
-        </div>
-        
-        <!-- 撥打電話按鈕 -->
-        <div class="button-container">
-            <a href="tel:+0968333591" class="call-button">撥打電話</a>
-        </div>
-    </div>
+
+<div class="container">
+  <img src="https://img2.imgtp.com/2024/05/23/LO5lAQxw.png" alt="Add a heading.png" title="Add a heading.png" />
+  <img src="https://img2.imgtp.com/2024/05/23/rcKDzyMA.png" alt="第一張圖片">
+  <img src="https://img2.imgtp.com/2024/05/23/OEFEGwyF.png" alt="第二張圖片">
+  <img src="https://img2.imgtp.com/2024/05/24/xxF9s9SR.png" alt="第四張圖片">
+</div>
+
+<div class="buttons">
+  <a href="https://lin.ee/peYAOyE" class="line-button button">加 LINE</a>
+  <a href="tel:0968333591" class="call-button button">撥打手機</a>
+</div>
+
 </body>
 </html>
