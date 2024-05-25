@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>響應式網頁</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .form-container {
+            margin: 20px 0;
+        }
+
+        .button-container {
+            margin: 20px 0;
+        }
+
+        .call-button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #e74c3c;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .call-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 圖片 -->
+        <div class="image-container">
+            <img src="https://www.google.com/imgres?q=00940&imgurl=https%3A%2F%2Fstartingedu.sgp1.digitaloceanspaces.com%2Fsedu%2Fwp-content%2Fuploads%2F00940_00.webp&imgrefurl=https%3A%2F%2Fstartingedu.com%2F00940-etf%2F&docid=z3S3dgukoGnSzM&tbnid=0ZqCT9HQD-6M6M&vet=12ahUKEwi9oaDy3aaGAxWaoK8BHcq9DP0QM3oECBEQAA..i&w=1281&h=721&hcb=2&ved=2ahUKEwi9oaDy3aaGAxWaoK8BHcq9DP0QM3oECBEQAA" alt="示例圖片">
+        </div>
+        
+        <!-- 嵌入Google表單 -->
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG_jFkUv24qNucYz4o2JhloA1W5aXY-IEAiu7TtZ7vGzYesw/viewform?embedded=true" width="640" height="2120" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+        </div>
+        
+        <!-- 撥打電話按鈕 -->
+        <div class="button-container">
+            <a href="tel:+0968333591" class="call-button">撥打電話</a>
+        </div>
+    </div>
+</body>
+</html>
